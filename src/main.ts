@@ -6,9 +6,9 @@ import { Icon } from "@iconify/vue";
 
 // #region : CSS
 import "normalize.css";
-import "@/assets/css/variables.css";
-import "@/assets/css/transition.css";
-import "@/assets/css/main.css";
+import "@/assets/css/variable.scss";
+import "@/assets/css/transition.scss";
+import "@/assets/css/main.scss";
 //  #endregion
 
 const app = createApp(App);
