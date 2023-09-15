@@ -3,7 +3,10 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
+// Unplugin Tools
 import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { VueUseComponentsResolver, VueUseDirectiveResolver } from "unplugin-vue-components/resolvers";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,6 +16,18 @@ export default defineConfig(({ mode }) => ({
       dts: true,
       imports: ["vue", "vue-router", "@vueuse/core"],
       vueTemplate: true,
+    }),
+    Components({
+      dts: true,
+      version: 3,
+      resolvers: [
+        VueUseComponentsResolver(),
+        VueUseDirectiveResolver()
+      ],
+      types: [{
+        from: "vue-router",
+        names: ["RouterLink", "RouterView"],
+      }],
     })
   ],
   resolve: {
