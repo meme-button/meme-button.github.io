@@ -14,7 +14,13 @@ export default defineConfig(({ mode }) => ({
     vue(),
     AutoImport({
       dts: true,
-      imports: ["vue", "vue-router", "@vueuse/core"],
+      imports: [
+        "vue",
+        "vue-router",
+        "@vueuse/core",
+        "vue-i18n",
+        { "@/i18n": ["$t", "$d", "$n", "$locale", "_changeLang"] },
+      ],
       vueTemplate: true,
     }),
     Components({

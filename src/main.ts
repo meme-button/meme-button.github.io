@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
+import i18n from "./i18n";
 import { Icon } from "@iconify/vue";
 
 // #region : CSS
@@ -16,6 +17,7 @@ const app = createApp(App);
 // Vue Plugins
 app.use(createPinia());
 app.use(router);
+app.use(i18n);
 
 // Global Component
 app.component("Icon", Icon);
