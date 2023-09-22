@@ -30,10 +30,16 @@ export default defineConfig(({ mode }) => ({
         VueUseComponentsResolver(),
         VueUseDirectiveResolver()
       ],
-      types: [{
-        from: "vue-router",
-        names: ["RouterLink", "RouterView"],
-      }],
+      types: [
+        {
+          from: "vue-router",
+          names: ["RouterLink", "RouterView"],
+        },
+        {
+          from: "@iconify/vue",
+          names: ["Icon"],
+        },
+      ],
     })
   ],
   resolve: {
