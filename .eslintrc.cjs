@@ -36,7 +36,7 @@ module.exports = {
     "no-inline-comments": "off",
     "no-lonely-if": "error",
     "no-mixed-spaces-and-tabs": "error",
-    "no-multi-spaces": "error",
+    "no-multi-spaces": ["error", { ignoreEOLComments: true }],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0, "maxBOF": 0 }],
     "no-shadow": ["warn", { "allow": ["err", "resolve", "reject"] }],
     "no-trailing-spaces": ["error"],

@@ -17,15 +17,17 @@ dependencies:
   vue:
     specifier: ^3.3.4
     version: 3.3.4
-  vue-gtag:
-    specifier: ^2.0.1
-    version: 2.0.1(vue@3.3.4)
   vue-i18n:
     specifier: '9'
     version: 9.4.0(vue@3.3.4)
   vue-router:
     specifier: ^4.2.4
     version: 4.2.4(vue@3.3.4)
+
+optionalDependencies:
+  vue-gtag:
+    specifier: ^2.0.1
+    version: 2.0.1(vue@3.3.4)
 
 devDependencies:
   '@iconify/vue':
@@ -2864,11 +2866,13 @@ packages:
 
   /vue-gtag@2.0.1(vue@3.3.4):
     resolution: {integrity: sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==}
+    requiresBuild: true
     peerDependencies:
       vue: ^3.0.0
     dependencies:
       vue: 3.3.4
     dev: false
+    optional: true
 
   /vue-i18n@9.4.0(vue@3.3.4):
     resolution: {integrity: sha512-701V7wv6m/Fesbu58rRJv9Rd3en/9F7Nxyn/NiwcR7bJkEfwflMJg5wVezkeHy1tIqjXME1e1zbHhK1dNaR8mg==}
