@@ -16,10 +16,7 @@ export default defineConfig(({ mode }) => ({
       dts: true,
       imports: [
         "vue",
-        "vue-router",
         "@vueuse/core",
-        "vue-i18n",
-        { "@/i18n": ["$t", "$d", "$n", "$locale", "_changeLang"] },
       ],
       vueTemplate: true,
     }),
@@ -31,10 +28,6 @@ export default defineConfig(({ mode }) => ({
         VueUseDirectiveResolver()
       ],
       types: [
-        {
-          from: "vue-router",
-          names: ["RouterLink", "RouterView"],
-        },
         {
           from: "@iconify/vue",
           names: ["Icon"],

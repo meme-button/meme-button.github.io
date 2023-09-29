@@ -1,8 +1,5 @@
 import { createApp } from "vue";
-import { createPinia } from "pinia";
 import App from "./App.vue";
-import router from "./router";
-import i18n from "./i18n";
 import { Icon } from "@iconify/vue";
 
 // #region : CSS
@@ -18,26 +15,21 @@ import type { Plugin } from "vue";
 
 const app = createApp(App);
 
-// Vue Plugins
-app.use(createPinia());
-app.use(router);
-app.use(i18n);
-
 // Global Component
 app.component("Icon", Icon);
 
 // Google Analytics
-const gtag = import.meta.glob("/node_modules/vue-gtag/dist/vue-gtag.esm.js", { eager: true, import: "default" });
-if (gtag.length) {
-  const gtagPlugin = Object.values(gtag)[0] as Plugin;
-  app.use(gtagPlugin, {
-    config: {
-      id: "###"  // Change to yout Google Analytics ID
-    },
-  }, router);
-} else {
-  console.info("Skip vue-gtag as not installed");
-}
+// const gtag = import.meta.glob("/node_modules/vue-gtag/dist/vue-gtag.esm.js", { eager: true, import: "default" });
+// if (gtag.length) {
+//   const gtagPlugin = Object.values(gtag)[0] as Plugin;
+//   app.use(gtagPlugin, {
+//     config: {
+//       id: "###"  // Change to yout Google Analytics ID
+//     },
+//   });
+// } else {
+//   console.info("Skip vue-gtag as not installed");
+// }
 
 // Mount it
 app.mount("#app");
