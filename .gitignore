@@ -28,9 +28,5 @@ coverage
 *.sln
 *.sw?
 
-# Unplugin generated files
-auto-imports.d.ts
-components.d.ts
-
 # Cache
 .eslintcache
