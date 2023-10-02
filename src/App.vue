@@ -7,6 +7,7 @@
   </header>
   <main>
     <div class="content">
+      <Playground />
     </div>
   </main>
 </template>
@@ -32,6 +33,7 @@ header {
 .site-logo {
   img {
     width: 20rem;
+    cursor: url("/cursor/cursor-hover.svg"), auto;
     &.logo-pressed {
       display: none;
     }
