@@ -1,35 +1,42 @@
-@import './base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+::selection {
+  background: #bcbce8;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+html {
+  color: rgb(var(--txt-color));
+  font-size: 16px;
+  font-family: "Zen Maru Gothic", Helvetica, Arial, sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden auto;
+  background: rgb(var(--bg-color)) url("/img/background.svg") repeat top center;
+  background-size: 350px;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+body {
+  height: 100%;
 }
+
+button {
+  font-family: inherit;
+  background: transparent;
+  border: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
