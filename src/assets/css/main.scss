@@ -21,6 +21,12 @@ html {
   overflow: hidden auto;
   background: rgb(var(--bg-color)) url("/img/background.svg") repeat top center;
   background-size: 350px;
+  * {
+    cursor: url("/cursor/cursor-normal.svg"), auto;
+  }
+  button, a {
+    cursor: url("/cursor/cursor-hover.svg"), pointer;
+  }
 }
 
 body {
@@ -38,5 +44,3 @@ img, svg {
   max-width: 100%;
   object-fit: contain;
 }
-
-
