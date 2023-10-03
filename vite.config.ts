@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => ({
       imports: [
         "vue",
         "@vueuse/core",
+        // { "@vueuse/sound": ["useSound"] },
       ],
       vueTemplate: true,
     }),
