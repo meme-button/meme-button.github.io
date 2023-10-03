@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "postinstall": "npx simple-git-hooks",
     "build": "run-p type-check build-only",
     "postbuild": "cp dist/index.html dist/404.html",
     "preview": "vite preview",
