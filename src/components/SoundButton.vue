@@ -1,6 +1,6 @@
 <template>
   <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'now-playing': isPlaying }">
-    <button type="button" @click="play()">{{ sound.name }}</button>
+    <button type="button" @click="playSound()">{{ sound.name }}</button>
   </div>
 </template>
 
@@ -14,8 +14,17 @@ const props = defineProps<{
 }>();
 
 const isNewBtn = computed(() => props.sound.date ? (new Date(props.sound.date)) >= props.twoWeeksAgoDate : false);
+
 const { play, stop, isPlaying } = useSound(new URL(`/src/assets/sound/${props.sound.id}.mp3`, import.meta.url).href);
-// const { play } = useSound(`@/assets/sound/${props.sound.id}.mp3`);
+function playSound() {
+  stopMusicBus.emit();
+  play();
+}
+
+const stopMusicBus = useEventBus<void>("stopMusic");
+stopMusicBus.on(() => {
+  stop();
+});
 </script>
 
 <style lang="scss" scoped>
