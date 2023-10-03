@@ -1,8 +1,10 @@
 <template>
   <header>
     <div class="site-logo">
-      <img class="logo-normal" src="/img/meme-button-logo.svg" alt="めめボタンのロゴ">
-      <img class="logo-pressed" src="/img/meme-button-logo-hover.svg" alt="めめボタンのロゴ（押した）">
+      <button type="button" @click="randomPlay()">
+        <img class="logo-normal" src="/img/meme-button-logo.svg" alt="めめボタンのロゴ">
+        <img class="logo-pressed" src="/img/meme-button-logo-hover.svg" alt="めめボタンのロゴ（押した）">
+      </button>
     </div>
   </header>
   <main>
@@ -10,9 +12,21 @@
       <Playground />
     </div>
   </main>
+  <footer>
+  </footer>
 </template>
 
 <script setup lang="ts">
+import soundData from "@/data/sound";
+import type { soundDataInterface } from "@/data/sound";
+
+const randomPlayBus = useEventBus<soundDataInterface["id"]>("randomPlay");
+
+async function randomPlay() {
+  const randomIndex = Math.floor(Math.random() * soundData.length);
+  randomPlayBus.emit(soundData[randomIndex].id);
+}
+
 </script>
 
 <style lang="scss">
@@ -33,7 +47,6 @@ header {
 .site-logo {
   img {
     width: 20rem;
-    cursor: url("/cursor/cursor-hover.svg"), auto;
     &.logo-pressed {
       display: none;
     }

@@ -24,8 +24,11 @@ html {
   * {
     cursor: url("/cursor/cursor-normal.svg"), auto;
   }
-  button, a {
+  :is(button, a) {
     cursor: url("/cursor/cursor-hover.svg"), pointer;
+    * {
+      cursor: url("/cursor/cursor-hover.svg"), pointer;
+    }
   }
 }
 
