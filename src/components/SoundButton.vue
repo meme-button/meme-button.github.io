@@ -25,6 +25,13 @@ const stopMusicBus = useEventBus<void>("stopMusic");
 stopMusicBus.on(() => {
   stop();
 });
+
+const randomPlayBus = useEventBus<soundDataInterface["id"]>("randomPlay");
+randomPlayBus.on(id => {
+  if (props.sound.id === id) {
+    playSound();
+  }
+});
 </script>
 
 <style lang="scss" scoped>
