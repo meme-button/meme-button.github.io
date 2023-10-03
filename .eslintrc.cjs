@@ -3,15 +3,18 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
   root: true,
-  "plugins": ["vuejs-accessibility"],
-  "extends": [
+  plugins: [
+    "vuejs-accessibility",
+  ],
+  extends: [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
     "@vue/eslint-config-typescript",
+    "@vue/eslint-config-typescript/recommended",
     "plugin:vuejs-accessibility/recommended",
   ],
   parserOptions: {
-    ecmaVersion: "latest"
+    ecmaVersion: "latest",
   },
   "rules": {
     "arrow-spacing": ["warn", { "before": true, "after": true }],
@@ -20,7 +23,7 @@ module.exports = {
     "comma-spacing": "error",
     "comma-style": "error",
     "curly": ["error", "multi-line", "consistent"],
-    "dot-location": ["error", "property"],
+    "dot-notation": "error",
     "eol-last": "error",
     "handle-callback-err": "off",
     "indent": ["error", 2, { "SwitchCase": 1 }],
@@ -30,19 +33,23 @@ module.exports = {
     "no-case-declarations": "off",
     "no-console": "off",
     "no-undefined": "off",
-    "no-empty-function": "error",
-    "no-extra-semi": "error",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "error",
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-extra-semi": "error",
     "no-floating-decimal": "error",
     "no-inline-comments": "off",
     "no-lonely-if": "error",
     "no-mixed-spaces-and-tabs": "error",
     "no-multi-spaces": ["error", { ignoreEOLComments: true }],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0, "maxBOF": 0 }],
-    "no-shadow": ["warn", { "allow": ["err", "resolve", "reject"] }],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
     "no-trailing-spaces": ["error"],
     "no-undef-init": "error",
     "no-undef": "off",
-    "no-unused-vars": ["warn"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "no-var": "warn",
     "object-curly-spacing": ["error", "always"],
     "prefer-const": "warn",
