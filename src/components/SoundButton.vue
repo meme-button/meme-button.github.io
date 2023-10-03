@@ -40,23 +40,26 @@ randomPlayBus.on(id => {
   bottom: 0.375rem;
   padding-top: 0.375rem;
   button {
-    background: rgb(var(--color-theme2));
+    --btn-bg: rgb(var(--color-theme2));
+    --btn-bg-pressed: rgb(var(--color-theme2-dark));
+    --btn-shadow: rgb(var(--color-theme2-dark));
+    background: var(--btn-bg);
     padding: 0.5rem .75rem;
     border-radius: 0.375rem;
-    box-shadow: 0px .375rem 0px rgb(var(--color-theme2-dark));
+    box-shadow: 0px .375rem 0px var(--btn-shadow);
   }
   &:active {
-    // bottom: 0;
     padding-top: 0.75rem;
     button {
-      background: rgb(var(--color-theme2-dark));
+      background: var(--btn-bg-pressed);
       box-shadow: none;
     }
   }
   &.now-playing {
     button {
-      background: rgb(var(--color-theme1));
-      box-shadow: 0px .375rem 0px rgb(189, 108, 120);
+      --btn-bg: rgb(var(--color-theme1));
+      --btn-bg-pressed: rgb(var(--color-theme1-dark));
+      --btn-shadow: rgb(var(--color-theme1-dark));
     }
   }
   &.new-btn::after {
