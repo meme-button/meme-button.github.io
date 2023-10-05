@@ -93,6 +93,10 @@ defineExpose({
     text-wrap: balance;
     margin-bottom: 0.375rem;
   }
+  .source-url a {
+    color: #D07C1D;
+    font-weight: 500;
+  }
 }
 
 .panel-btn {
