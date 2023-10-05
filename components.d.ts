@@ -10,5 +10,6 @@ declare module 'vue' {
     Icon: typeof import('@iconify/vue')['Icon']
     Playground: typeof import('./src/views/Playground.vue')['default']
     SoundButton: typeof import('./src/components/SoundButton.vue')['default']
+    SourcePanel: typeof import('./src/components/SourcePanel.vue')['default']
   }
 }

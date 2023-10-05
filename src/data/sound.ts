@@ -10,18 +10,17 @@ export const enum person {
 
 export const enum group { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Others }
 
-interface source {
-  title: string,
-  type: sourceType,
-  url: string,
-}
 export interface soundDataInterface {
   id: string | number,
   name: string,
   date?: string,
   who?: person,
   group?: group,
-  source: source,
+  source: {
+    title: string,
+    type: sourceType,
+    url: string,
+  },
 }
 
 const sound:soundDataInterface[] = [
