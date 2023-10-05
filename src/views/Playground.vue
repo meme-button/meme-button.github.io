@@ -1,5 +1,5 @@
 <template>
-  <div class="playgound">
+  <section class="playgound">
     <ul class="button-list">
       <li v-for="sound in soundData" :key="sound.id">
         <SoundButton
@@ -8,7 +8,7 @@
         />
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

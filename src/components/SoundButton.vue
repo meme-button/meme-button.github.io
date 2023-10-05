@@ -1,11 +1,10 @@
 <template>
-  <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'now-playing': isPlaying }">
+  <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'just-played': justPlayed }">
     <button type="button" @click="playSound()">{{ sound.name }}</button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useSound } from "@raffaelesgarro/vue-use-sound";
 import type { soundDataInterface } from "@/data/sound";
 
 const props = defineProps<{
@@ -14,16 +13,19 @@ const props = defineProps<{
 }>();
 
 const isNewBtn = computed(() => props.sound.date ? (new Date(props.sound.date)) >= props.twoWeeksAgoDate : false);
+const justPlayed = ref(false);
 
-const { play, stop, isPlaying } = useSound(new URL(`/src/assets/sound/${props.sound.id}.mp3`, import.meta.url).href);
+const { play, stop } = useSound(new URL(`/src/assets/sound/${props.sound.id}.mp3`, import.meta.url).href);
 function playSound() {
   stopMusicBus.emit();
+  justPlayed.value = true;
   play();
 }
 
 const stopMusicBus = useEventBus<void>("stopMusic");
 stopMusicBus.on(() => {
   stop();
+  justPlayed.value = false;
 });
 
 const randomPlayBus = useEventBus<soundDataInterface["id"]>("randomPlay");
@@ -55,7 +57,7 @@ randomPlayBus.on(id => {
       box-shadow: none;
     }
   }
-  &.now-playing {
+  &.just-played {
     button {
       --btn-bg: rgb(var(--color-theme1));
       --btn-bg-pressed: rgb(var(--color-theme1-dark));

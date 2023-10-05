@@ -1,22 +1,26 @@
 <template>
   <header>
+    <h1 class="sr-only">めめボタン</h1>
     <div class="site-logo">
-      <button type="button" @click="randomPlay()">
+      <button type="button" aria-label="ランダム再生" @click="randomPlay()">
         <img class="logo-normal" src="/img/meme-button-logo.svg" alt="めめボタンのロゴ">
         <img class="logo-pressed" src="/img/meme-button-logo-hover.svg" alt="めめボタンのロゴ（押した）">
       </button>
     </div>
   </header>
   <main>
-    <div class="content">
+    <div class="content" :style="{ paddingBottom: panelHeight }">
       <Playground />
     </div>
   </main>
   <footer>
+    <SourcePanel ref="sourcePanel" />
   </footer>
 </template>
 
 <script setup lang="ts">
+import SourcePanel from "./components/SourcePanel.vue";
+
 import soundData from "@/data/sound";
 import type { soundDataInterface } from "@/data/sound";
 
@@ -27,6 +31,8 @@ async function randomPlay() {
   randomPlayBus.emit(soundData[randomIndex].id);
 }
 
+const sourcePanel = ref<InstanceType<typeof SourcePanel>>();
+const panelHeight = computed(() => sourcePanel.value?.isExpanded ? sourcePanel.value?.panelHeight + "px" : undefined);
 </script>
 
 <style lang="scss">
@@ -74,5 +80,6 @@ main {
   border-radius: 1rem;
   padding: 1.5rem;
   overflow: auto;
+  transition: padding-bottom .3s ease;
 }
 </style>
