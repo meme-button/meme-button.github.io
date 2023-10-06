@@ -8,14 +8,28 @@ export const enum person {
   MemeTan,
 }
 
-export const enum group { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Others }
+export const enum jpGroupOption { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Others }
+
+export const jpGroup = new Map<jpGroupOption, string>([
+  [jpGroupOption.A, "あ行"],
+  [jpGroupOption.Ka, "か行"],
+  [jpGroupOption.Sa, "さ行"],
+  [jpGroupOption.Ta, "た行"],
+  [jpGroupOption.Na, "な行"],
+  [jpGroupOption.Ha, "は行"],
+  [jpGroupOption.Ma, "ま行"],
+  [jpGroupOption.Ya, "や行"],
+  [jpGroupOption.Ra, "ら行"],
+  [jpGroupOption.Wa, "わ行"],
+  [jpGroupOption.Others, "その他"],
+]);
 
 export interface soundDataInterface {
   id: string | number,
   name: string,
   date?: string,
   who?: person,
-  group?: group,
+  group?: jpGroupOption,
   source: {
     title: string,
     type: sourceType,
@@ -29,7 +43,7 @@ const sound:soundDataInterface[] = [
     name: "こんめめ",
     date: "2023-10-2",
     who: person.MemeTan,
-    group: group.Ka,
+    group: jpGroupOption.Ka,
     source: {
       title: "ドーナツ美味しそうでしょ？🍩😋",
       type: sourceType.Twitter,
@@ -41,7 +55,7 @@ const sound:soundDataInterface[] = [
     name: "おつめめ",
     date: "2023-10-2",
     who: person.MemeTan,
-    group: group.A,
+    group: jpGroupOption.A,
     source: {
       title: "ドーナツ美味しそうでしょ？🍩😋",
       type: sourceType.Twitter,
