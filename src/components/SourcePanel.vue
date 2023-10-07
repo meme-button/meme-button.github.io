@@ -1,12 +1,16 @@
 <template>
   <section ref="sourcePanel" class="source-panel" :class="{ 'expanded': isExpanded }">
-    <div class="source-icon">
-      <Icon :icon="sourceIcon" />
-    </div>
-    <div class="source-details">
-      <h2 class="source-title">{{ title }}</h2>
-      <p class="source-url"><a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
-    </div>
+    <Transition name="fade" mode="out-in">
+      <div class="source-icon" :key="url">
+        <Icon :icon="sourceIcon" />
+      </div>
+    </Transition>
+    <Transition name="fade" mode="out-in">
+      <div class="source-details" :key="url">
+        <h2 class="source-title">{{ title }}</h2>
+        <p class="source-url"><a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
+      </div>
+    </Transition>
     <button type="button" class="panel-btn" @click="isExpanded = !isExpanded">
       <Icon :icon="isExpanded ? 'iconamoon:arrow-down-2-fill' : 'iconamoon:arrow-up-2-fill'" />
     </button>
@@ -15,19 +19,15 @@
 
 <script setup lang="ts">
 import { sourceType } from "@/data/sound";
+import type { soundDataInterface } from "@/data/sound";
 
-interface Props {
-  type?: sourceType,
-  title?: string,
-  url?: string,
-}
-const props = withDefaults(defineProps<Props>(), {
-  title: "これはめめの大好きなプリンです",
-  url: "https://memehitsuji.com/",
-});
+const type = ref<soundDataInterface["source"]["type"]>();
+const title = ref<soundDataInterface["source"]["title"]>("これはめめの大好きなプリンです");
+const url = ref<soundDataInterface["source"]["url"]>("https://memehitsuji.com/");
 
+// #region : Determine what icon to be use
 const sourceIcon = computed(() => {
-  switch (props.type) {
+  switch (type.value) {
     case sourceType.Twitter:
       return "logos:twitter";
 
@@ -38,16 +38,29 @@ const sourceIcon = computed(() => {
       return "noto:custard";
   }
 });
+//  #endregion
 
+// #region : Update on play
+const playSoundBus = useEventBus<soundDataInterface>("playSound");
+playSoundBus.on(sound => {
+  console.log("🚀 ~ file: SourcePanel.vue:42 ~ sound:", sound);
+  type.value = sound.source.type;
+  title.value = sound.source.title;
+  url.value = sound.source.url;
+});
+//  #endregion
+
+// #region : Handle expand and pass the height
 const sourcePanel = ref<HTMLElement>();
 const { height: panelHeight } = useElementBounding(sourcePanel);
 
-const isExpanded = ref(false);
+const isExpanded = ref(true);
 
 defineExpose({
   panelHeight,
   isExpanded,
 });
+//  #endregion
 </script>
 
 <style lang="scss" scoped>
@@ -78,6 +91,7 @@ defineExpose({
 }
 
 .source-icon {
+  --fade-time: .2s;
   margin-right: 1.5rem;
   .iconify {
     font-size: 3rem;
@@ -85,6 +99,7 @@ defineExpose({
 }
 
 .source-details {
+  --fade-time: .2s;
   flex: 1 1 auto;
   .source-title {
     color: rgb(var(--pudding-brown));
