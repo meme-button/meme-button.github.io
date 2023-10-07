@@ -15,20 +15,24 @@ const props = defineProps<{
 const isNewBtn = computed(() => props.sound.date ? (new Date(props.sound.date)) >= props.twoWeeksAgoDate : false);
 const justPlayed = ref(false);
 
-const { play, stop } = useSound(new URL(`/src/assets/sound/${props.sound.id}.mp3`, import.meta.url).href);
+const { play, stop } = useSound(new URL(`/src/assets/sound/${props.sound.id}.mp3`, import.meta.url).href, { volume: props.sound.volume });
+
+const playSoundBus = useEventBus<soundDataInterface>("playSound");
+const stopSoundBus = useEventBus<void>("stopSound");
+const randomPlayBus = useEventBus<soundDataInterface["id"]>("randomPlay");
+
 function playSound() {
-  stopMusicBus.emit();
+  stopSoundBus.emit();
+  playSoundBus.emit(props.sound);
   justPlayed.value = true;
   play();
 }
 
-const stopMusicBus = useEventBus<void>("stopMusic");
-stopMusicBus.on(() => {
+stopSoundBus.on(() => {
   stop();
   justPlayed.value = false;
 });
 
-const randomPlayBus = useEventBus<soundDataInterface["id"]>("randomPlay");
 randomPlayBus.on(id => {
   if (props.sound.id === id) {
     playSound();
