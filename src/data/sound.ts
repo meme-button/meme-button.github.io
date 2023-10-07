@@ -35,11 +35,36 @@ export interface soundDataInterface {
     type: sourceType,
     url: string,
   },
+  volume?: number,
 }
 
 const sound:soundDataInterface[] = [
   {
     id: 1,
+    name: "おはめめ",
+    date: "2023-10-8",
+    who: person.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=-fUS25Ca-yg",
+    }
+  },
+  {
+    id: 2,
+    name: "会いに来てくれてありがとう",
+    date: "2023-10-8",
+    who: person.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=-fUS25Ca-yg",
+    }
+  },
+  {
+    id: 3,
     name: "こんめめ",
     date: "2023-10-2",
     who: person.MemeTan,
@@ -48,19 +73,8 @@ const sound:soundDataInterface[] = [
       title: "ドーナツ美味しそうでしょ？🍩😋",
       type: sourceType.Twitter,
       url: "https://twitter.com/memehitsuji19/status/1703835757113491805",
-    }
-  },
-  {
-    id: 2,
-    name: "おつめめ",
-    date: "2023-10-2",
-    who: person.MemeTan,
-    group: jpGroupOption.A,
-    source: {
-      title: "ドーナツ美味しそうでしょ？🍩😋",
-      type: sourceType.Twitter,
-      url: "https://twitter.com/memehitsuji19/status/1703835757113491805",
-    }
+    },
+    volume: 0.3,
   },
 ];
 
