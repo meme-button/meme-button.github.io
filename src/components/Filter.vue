@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts">
-export interface filterOptionStru {
+export interface filterOptionStru<T = string|number> {
   name: string,
-  value: string|number,
+  value: T,
 }
 </script>
 

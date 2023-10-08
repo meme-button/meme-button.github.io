@@ -8,7 +8,7 @@ export const enum person {
   MemeTan,
 }
 
-export const enum jpGroupOption { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Others }
+export const enum jpGroupOption { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Other }
 
 export const jpGroup = new Map<jpGroupOption, string>([
   [jpGroupOption.A, "あ行"],
@@ -21,7 +21,7 @@ export const jpGroup = new Map<jpGroupOption, string>([
   [jpGroupOption.Ya, "や行"],
   [jpGroupOption.Ra, "ら行"],
   [jpGroupOption.Wa, "わ行"],
-  [jpGroupOption.Others, "その他"],
+  [jpGroupOption.Other, "その他"],
 ]);
 
 export interface soundDataInterface {
