@@ -1,6 +1,9 @@
 <template>
-  <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'just-played': justPlayed }">
-    <button type="button" @click="playSound()">{{ sound.name }}</button>
+  <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'just-played': justPlayed, 'asmr': sound.isASMR }">
+    <button type="button" @click="playSound()">
+      <span class="sound-name">{{ sound.name }}</span>
+      <span v-if="sound.isASMR" class="label-asmr">ASMR</span>
+    </button>
   </div>
 </template>
 
@@ -45,27 +48,54 @@ randomPlayBus.on(id => {
   position: relative;
   padding-bottom: 0.375rem;
   button {
-    --btn-bg: rgb(var(--color-theme2));
-    --btn-bg-pressed: rgb(var(--color-theme2-dark));
-    --btn-shadow: rgb(var(--color-theme2-dark));
-    background: var(--btn-bg);
-    padding: 0.5rem .75rem;
-    border-radius: 0.375rem;
-    box-shadow: 0px .375rem 0px var(--btn-shadow);
+    padding: 0;
+    span {
+      --btn-bg: rgb(var(--color-theme2));
+      --btn-bg-pressed: rgb(var(--color-theme2-dark));
+      --btn-shadow: rgb(var(--color-theme2-dark));
+      display: inline-block;
+      background: var(--btn-bg);
+      padding: 0.5rem .75rem;
+      border-radius: 0.375rem;
+      box-shadow: 0px .375rem 0px var(--btn-shadow);
+    }
+    .label-asmr {
+      --btn-bg: rgb(var(--sharp-pink));
+      --btn-bg-pressed: rgb(var(--sharp-pink-dark));
+      --btn-shadow: rgb(var(--sharp-pink-dark));
+      color: #fff;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-left: 0.5rem;
+    }
+  }
+  &.asmr {
+    .sound-name {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-right: 0.5rem;
+    }
   }
   &:active {
     padding-top: 0.375rem;
     padding-bottom: 0;
-    button {
+    button span {
       background: var(--btn-bg-pressed);
       box-shadow: none;
     }
   }
   &.just-played {
     button {
-      --btn-bg: rgb(var(--color-theme1));
-      --btn-bg-pressed: rgb(var(--color-theme1-dark));
-      --btn-shadow: rgb(var(--color-theme1-dark));
+      .sound-name {
+        --btn-bg: rgb(var(--color-theme1));
+        --btn-bg-pressed: rgb(var(--color-theme1-dark));
+        --btn-shadow: rgb(var(--color-theme1-dark));
+      }
+      .label-asmr {
+        --btn-bg: rgb(var(--sharp-pink-dark));
+        --btn-bg-pressed: rgb(var(--sharp-pink-darker));
+        --btn-shadow: rgb(var(--sharp-pink-darker));
+      }
     }
   }
   &.new-btn::after {
