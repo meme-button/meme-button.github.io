@@ -33,4 +33,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: try to build the project
-        run: npm run build
+        run: npm run pr-check
