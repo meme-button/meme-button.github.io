@@ -6,7 +6,7 @@ name: Build and check on submit PR
 # events but only for the master branch
 on:
   pull_request:
-    types: [ opened, edited, synchronize ]
+    types: [ opened, synchronize ]
     branches: [ main ]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
