@@ -20,8 +20,8 @@
 </template>
 
 <script setup lang="ts">
-import type { filterOptionStru } from "@/components/Filter.vue";
 import soundData, { jpGroupOption, jpGroup } from "@/data/sound";
+import type { filterOptionStru } from "@/components/Filter.vue";
 
 const twoWeeksAgoDate = new Date();
 twoWeeksAgoDate.setDate(twoWeeksAgoDate.getDate() - 14);
@@ -30,10 +30,11 @@ twoWeeksAgoDate.setDate(twoWeeksAgoDate.getDate() - 14);
 const filterOptions = computed(():filterOptionStru<jpGroupOption|"All">[] => {
   const options:filterOptionStru<jpGroupOption|"All">[] = [];
   for (const [key, value] of jpGroup.entries()) {
-    options.push({ name: value, value: key });
+    const count = soundData.filter(sound => sound.group === key).length;
+    options.push({ name: value, value: key, count });
   }
   return [
-    { name: "全て", value: "All" },
+    { name: "全て", value: "All", count: soundData.length },
     ...options,
   ];
 });

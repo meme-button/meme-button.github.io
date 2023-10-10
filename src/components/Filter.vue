@@ -1,7 +1,7 @@
 <template>
   <ul class="filter-list">
     <li v-for="(option, index) in filterOptions" :key="option.value" :class="{ 'active': index === activeFilterIndex }">
-      <button type="button" @click="changefilter(option.value, index)">{{ option.name }}</button>
+      <button type="button" @click="changefilter(option.value, index)">{{ option.name }}<span v-if="option.count !== undefined">&nbsp;({{ option.count }})</span></button>
     </li>
   </ul>
 </template>
@@ -10,6 +10,7 @@
 export interface filterOptionStru<T = string|number> {
   name: string,
   value: T,
+  count?: number,
 }
 </script>
 
@@ -62,7 +63,7 @@ function changefilter(option:filterOptionStru["value"], index:number) {
         color: #fff;
         font-weight: bold;
         bottom: 0;
-        background: rgb(var(--color-theme1));
+        background: rgb(var(--sharp-pink));
         box-shadow: none;
       }
     }
