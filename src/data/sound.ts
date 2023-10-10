@@ -50,7 +50,8 @@ const sound:soundDataInterface[] = [
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
       type: sourceType.Youtube,
       url: "https://www.youtube.com/watch?v=-fUS25Ca-yg",
-    }
+    },
+    isASMR: true,
   },
   {
     id: 2,
@@ -76,21 +77,21 @@ const sound:soundDataInterface[] = [
       type: sourceType.Twitter,
       url: "https://twitter.com/memehitsuji19/status/1703835757113491805",
     },
-    volume: 0.3,
+    volume: 0.2,
   },
   {
     // 2:29:01~
     id: 4,
-    name: "はーーーーしししししししーー",
-    date: "2023-10-9",
+    name: "はーーーーしししししししししーー",
+    date: "2023-10-11",
     who: person.MemeNe,
     group: jpGroupOption.Ha,
     source: {
-      title: "ドーナツ美味しそうでしょ？🍩😋",
+      title: "【作業雑談┋Just Chatting】来週のスケジュールつくり→スイカゲーム→雀魂(作業)🐏羊娘めめ Vtuber",
       type: sourceType.Youtube,
       url: "https://www.youtube.com/watch?v=Ul3BmdcFeDg",
     },
-    volume: 0.3,
+    volume: 0.2,
   },
 ];
 
