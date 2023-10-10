@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Filter: typeof import('./src/components/Filter.vue')['default']
     Icon: typeof import('@iconify/vue')['Icon']
     Playground: typeof import('./src/views/Playground.vue')['default']
     SoundButton: typeof import('./src/components/SoundButton.vue')['default']

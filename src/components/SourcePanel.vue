@@ -1,11 +1,11 @@
 <template>
   <section ref="sourcePanel" class="source-panel" :class="{ 'expanded': isExpanded }">
-    <Transition name="fade" mode="out-in">
+    <Transition :name="isExpanded ? 'fade' : ''" mode="out-in">
       <div class="source-icon" :key="url">
         <Icon :icon="sourceIcon" />
       </div>
     </Transition>
-    <Transition name="fade" mode="out-in">
+    <Transition :name="isExpanded ? 'fade' : ''" mode="out-in">
       <div class="source-details" :key="url">
         <h2 class="source-title">{{ title }}</h2>
         <p class="source-url"><a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
@@ -40,13 +40,15 @@ const sourceIcon = computed(() => {
 });
 //  #endregion
 
-// #region : Update on play
+// #region : Update and display on play
 const playSoundBus = useEventBus<soundDataInterface>("playSound");
-playSoundBus.on(sound => {
+playSoundBus.on(async sound => {
   console.log("🚀 ~ file: SourcePanel.vue:42 ~ sound:", sound);
   type.value = sound.source.type;
   title.value = sound.source.title;
   url.value = sound.source.url;
+  await nextTick();
+  isExpanded.value = true;
 });
 //  #endregion
 
@@ -55,12 +57,15 @@ const sourcePanel = ref<HTMLElement>();
 const { height: panelHeight } = useElementBounding(sourcePanel);
 
 const isExpanded = ref(true);
+//  #endregion
 
+// #region : Expose some value
 defineExpose({
   panelHeight,
   isExpanded,
 });
 //  #endregion
+
 </script>
 
 <style lang="scss" scoped>

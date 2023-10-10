@@ -9,6 +9,7 @@
     "postbuild": "cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "build-only": "vite build",
+    "pr-check": "run-p type-check build-only",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --cache --fix --ignore-path .gitignore"
   },
