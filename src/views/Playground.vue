@@ -7,6 +7,9 @@
       </div>
     </header>
     <ul class="button-list">
+      <li class="submit-new">
+        <a href="https://forms.gle/JPrUUCSCKLCZibZZ9" target="_blank" rel="noreferrer noopener" title="新しいボタンの意見"><Icon icon="uiw:plus" /></a>
+      </li>
       <TransitionGroup name="fade">
         <li v-for="sound in soundDataFiltered" :key="sound.id">
           <SoundButton
@@ -76,10 +79,18 @@ function filterButtons(option:filterOptionStru["value"]) {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     gap: 0.75rem;
     padding: 0;
     margin: 0;
     li {
+      &.submit-new a {
+        color: rgb(var(--txt-color));
+        display: block;
+        padding: 0.5rem;
+        background: #dedede;
+        border-radius: 10rem;
+      }
       &.fade-leave-active {
         position: absolute;
       }
