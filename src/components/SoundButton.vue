@@ -1,6 +1,6 @@
 <template>
   <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'just-played': justPlayed, 'asmr': sound.isASMR }">
-    <button type="button" @click="playSound()">
+    <button type="button" :aria-label="sound.name" @click="playSound()">
       <span class="sound-name">{{ sound.name }}</span>
       <span v-if="sound.isASMR" class="label-asmr">ASMR</span>
     </button>
