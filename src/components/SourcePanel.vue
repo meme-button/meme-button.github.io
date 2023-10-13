@@ -1,14 +1,18 @@
 <template>
   <section ref="sourcePanel" class="source-panel" :class="{ 'expanded': isExpanded }">
     <Transition :name="isExpanded ? 'fade' : ''" mode="out-in">
-      <div class="source-icon" :key="url">
+      <div class="source-icon" :key="id">
         <Icon :icon="sourceIcon" />
       </div>
     </Transition>
     <Transition :name="isExpanded ? 'fade' : ''" mode="out-in">
-      <div class="source-details" :key="url">
-        <h2 class="source-title">{{ title }}</h2>
+      <div class="source-details" :key="id">
+        <RollingText class="source-title" tag="h2" :text="title" />
         <p class="source-url"><a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
+        <ul class="source-info">
+          <li v-if="period" class="source-period">{{ period }}</li>
+          <li v-if="who" class="source-who">{{ person.get(who) }}</li>
+        </ul>
       </div>
     </Transition>
     <button type="button" class="panel-btn" @click="isExpanded = !isExpanded">
@@ -18,12 +22,15 @@
 </template>
 
 <script setup lang="ts">
-import { sourceType } from "@/data/sound";
+import { sourceType, person } from "@/data/sound";
 import type { soundDataInterface } from "@/data/sound";
 
+const id = ref<soundDataInterface["id"]>();
 const type = ref<soundDataInterface["source"]["type"]>();
 const title = ref<soundDataInterface["source"]["title"]>("これはめめの大好きなプリンです");
 const url = ref<soundDataInterface["source"]["url"]>("https://memehitsuji.com/");
+const period = ref<soundDataInterface["source"]["period"]>();
+const who = ref<soundDataInterface["who"]>();
 
 // #region : Determine what icon to be use
 const sourceIcon = computed(() => {
@@ -44,9 +51,12 @@ const sourceIcon = computed(() => {
 const playSoundBus = useEventBus<soundDataInterface>("playSound");
 playSoundBus.on(async sound => {
   console.log("🚀 ~ file: SourcePanel.vue:42 ~ sound:", sound);
+  id.value = sound.id;
   type.value = sound.source.type;
   title.value = sound.source.title;
   url.value = sound.source.url;
+  period.value = sound.source.period;
+  who.value = sound.who;
   await nextTick();
   isExpanded.value = true;
 });
@@ -97,25 +107,47 @@ defineExpose({
 
 .source-icon {
   --fade-time: .2s;
+  flex: 0 0 auto;
   margin-right: 1.5rem;
   .iconify {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 .source-details {
   --fade-time: .2s;
   flex: 1 1 auto;
+  overflow: hidden;
+  a {
+    color: rgb(var(--pudding-brown-light));
+    font-weight: 500;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .source-title {
     color: rgb(var(--pudding-brown));
     font-size: 1.25rem;
     font-weight: 500;
     text-wrap: balance;
-    margin-bottom: 0.375rem;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+    :deep(span) {
+      font-weight: 500;
+    }
   }
-  .source-url a {
-    color: #D07C1D;
-    font-weight: 500;
+  .source-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li + li {
+      margin-top: 0.375rem;
+    }
+    &:not(:empty) {
+      margin-top: 0.5rem;
+    }
   }
 }
 

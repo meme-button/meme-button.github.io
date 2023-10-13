@@ -3,10 +3,17 @@
     <header>
       <div class="widget widget-filter">
         <span class="widget-label">フィルター</span>
-        <Filter :filter-options="filterOptions" @filter-clicked="filterButtons" />
+        <Filter
+          :filter-options="filterOptions"
+          disable-empty-choice
+          @filter-clicked="filterButtons"
+        />
       </div>
     </header>
     <ul class="button-list">
+      <li class="submit-new">
+        <a href="https://forms.gle/JPrUUCSCKLCZibZZ9" target="_blank" rel="noreferrer noopener" title="新しいボタンの意見"><Icon icon="uiw:plus" /></a>
+      </li>
       <TransitionGroup name="fade">
         <li v-for="sound in soundDataFiltered" :key="sound.id">
           <SoundButton
@@ -76,13 +83,31 @@ function filterButtons(option:filterOptionStru["value"]) {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     gap: 0.75rem;
+    min-height: 2.625rem;
     padding: 0;
     margin: 0;
     li {
+      max-width: 100%;
+      &.submit-new a {
+        color: rgb(var(--txt-color));
+        display: block;
+        padding: 0.5rem;
+        background: #dedede;
+        border-radius: 10rem;
+      }
       &.fade-leave-active {
         position: absolute;
       }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .playgound {
+    .widget-filter {
+      flex-direction: column;
     }
   }
 }

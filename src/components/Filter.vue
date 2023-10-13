@@ -1,7 +1,21 @@
 <template>
   <ul class="filter-list">
-    <li v-for="(option, index) in filterOptions" :key="option.value" :class="{ 'active': index === activeFilterIndex }">
-      <button type="button" @click="changefilter(option.value, index)">{{ option.name }}<span v-if="option.count !== undefined">&nbsp;({{ option.count }})</span></button>
+    <li
+      v-for="(option, index) in filterOptions"
+      :key="option.value"
+      :class="{
+        'active': index === activeFilterIndex,
+        'disabled': disableEmptyChoice && option.count === 0,
+      }"
+    >
+      <button
+        type="button"
+        :disabled="disableEmptyChoice && option.count === 0"
+        @click="changefilter(option.value, index)"
+      >
+        <span>{{ option.name }}</span>
+        <span v-if="option.count !== undefined">&nbsp;({{ option.count }})</span>
+      </button>
     </li>
   </ul>
 </template>
@@ -17,6 +31,7 @@ export interface filterOptionStru<T = string|number> {
 <script setup lang="ts">
 const props = defineProps<{
   filterOptions: filterOptionStru[],
+  disableEmptyChoice?: boolean,
 }>();
 const emit = defineEmits<{
   (e: "filterClicked", para: filterOptionStru["value"]): void
@@ -40,7 +55,7 @@ function changefilter(option:filterOptionStru["value"], index:number) {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: .75rem;
+  gap: .5rem .75rem;
   padding: 0;
   margin: 0;
   li {
@@ -51,11 +66,17 @@ function changefilter(option:filterOptionStru["value"], index:number) {
       border-radius: 10rem;
       padding: .5rem .75rem;
       transition: all .3s ease;
-      &:hover, &:active {
+      :is(&:hover, &:active):where(:not(:disabled)) {
         color: #fff;
         bottom: .25rem;
         background: rgb(var(--color-theme1));
         box-shadow: 0px .25rem .5rem rgb(var(--color-theme1-dark));
+      }
+    }
+    &.disabled {
+      button {
+        opacity: .65;
+        pointer-events: none;
       }
     }
     &.active {
@@ -65,6 +86,9 @@ function changefilter(option:filterOptionStru["value"], index:number) {
         bottom: 0;
         background: rgb(var(--sharp-pink));
         box-shadow: none;
+        span {
+          font-weight: inherit;
+        }
       }
     }
   }

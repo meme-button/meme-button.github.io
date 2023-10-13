@@ -3,13 +3,14 @@ export const enum sourceType {
   Youtube,
 }
 
-export const enum person {
-  MemeNe,
-  MemeTan,
-}
+export const enum personOptions { MemeNe, MemeTan, MemeBoth }
+export const person = new Map<personOptions, string>([
+  [personOptions.MemeNe, "めめ姉"],
+  [personOptions.MemeTan, "めめタン"],
+  [personOptions.MemeBoth, "めめ姉とめめタン"],
+]);
 
 export const enum jpGroupOption { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Other }
-
 export const jpGroup = new Map<jpGroupOption, string>([
   [jpGroupOption.A, "あ行"],
   [jpGroupOption.Ka, "か行"],
@@ -28,12 +29,13 @@ export interface soundDataInterface {
   id: string | number,
   name: string,
   date?: string,
-  who?: person,
+  who?: personOptions,
   group?: jpGroupOption,
   source: {
     title: string,
     type: sourceType,
     url: string,
+    period?: string,
   },
   isASMR?: boolean,
   volume?: number,
@@ -44,19 +46,20 @@ const sound:soundDataInterface[] = [
     id: 1,
     name: "おはめめ",
     date: "2023-10-8",
-    who: person.MemeTan,
+    who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
       type: sourceType.Youtube,
       url: "https://www.youtube.com/watch?v=-fUS25Ca-yg",
-    }
+    },
+    isASMR: true,
   },
   {
     id: 2,
     name: "会いに来てくれてありがとう",
     date: "2023-10-8",
-    who: person.MemeTan,
+    who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
@@ -69,28 +72,28 @@ const sound:soundDataInterface[] = [
     id: 3,
     name: "こんめめ",
     date: "2023-10-2",
-    who: person.MemeTan,
+    who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
       title: "ドーナツ美味しそうでしょ？🍩😋",
       type: sourceType.Twitter,
       url: "https://twitter.com/memehitsuji19/status/1703835757113491805",
     },
-    volume: 0.3,
+    volume: 0.2,
   },
   {
     // 2:29:01~
     id: 4,
-    name: "はーーーーしししししししーー",
-    date: "2023-10-9",
-    who: person.MemeNe,
+    name: "はーーーーしししししししししーー",
+    date: "2023-10-11",
+    who: personOptions.MemeNe,
     group: jpGroupOption.Ha,
     source: {
-      title: "ドーナツ美味しそうでしょ？🍩😋",
+      title: "【作業雑談┋Just Chatting】来週のスケジュールつくり→スイカゲーム→雀魂(作業)🐏羊娘めめ Vtuber",
       type: sourceType.Youtube,
       url: "https://www.youtube.com/watch?v=Ul3BmdcFeDg",
     },
-    volume: 0.3,
+    volume: 0.2,
   },
 ];
 

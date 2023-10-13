@@ -2,7 +2,7 @@
   <header>
     <h1 class="sr-only">めめボタン</h1>
     <div class="site-logo">
-      <button type="button" aria-label="ランダム再生" @click="randomPlay()">
+      <button type="button" title="ランダム再生" aria-label="ランダム再生" @click="randomPlay()">
         <img class="logo-normal" src="/img/meme-button-logo.svg" alt="めめボタンのロゴ">
         <img class="logo-pressed" src="/img/meme-button-logo-hover.svg" alt="めめボタンのロゴ（押した）">
       </button>
@@ -80,6 +80,19 @@ main {
   border-radius: 1rem;
   padding: 1.5rem;
   overflow: auto;
-  transition: padding-bottom .3s ease;
+  transition: padding .3s ease;
+}
+
+@media (max-width: 575px) {
+  .site-logo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 </style>
