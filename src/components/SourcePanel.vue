@@ -134,14 +134,19 @@ defineExpose({
     text-wrap: balance;
     height: 1.5rem;
     margin-bottom: 0.5rem;
+    :deep(span) {
+      font-weight: 500;
+    }
   }
   .source-info {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 0.5rem;
     li + li {
       margin-top: 0.375rem;
+    }
+    &:not(:empty) {
+      margin-top: 0.5rem;
     }
   }
 }

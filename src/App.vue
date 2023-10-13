@@ -80,6 +80,19 @@ main {
   border-radius: 1rem;
   padding: 1.5rem;
   overflow: auto;
-  transition: padding-bottom .3s ease;
+  transition: padding .3s ease;
+}
+
+@media (max-width: 575px) {
+  .site-logo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 </style>

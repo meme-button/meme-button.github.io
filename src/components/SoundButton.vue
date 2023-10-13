@@ -48,6 +48,10 @@ randomPlayBus.on(id => {
   position: relative;
   padding-bottom: 0.375rem;
   button {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    white-space: nowrap;
     padding: 0;
     span {
       --btn-bg: rgb(var(--color-theme2));
@@ -58,6 +62,11 @@ randomPlayBus.on(id => {
       padding: 0.5rem .75rem;
       border-radius: 0.375rem;
       box-shadow: 0px .375rem 0px var(--btn-shadow);
+    }
+    .sound-name {
+      flex: 0 1 auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .label-asmr {
       --btn-bg: rgb(var(--sharp-pink));

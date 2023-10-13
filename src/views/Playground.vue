@@ -89,6 +89,7 @@ function filterButtons(option:filterOptionStru["value"]) {
     padding: 0;
     margin: 0;
     li {
+      max-width: 100%;
       &.submit-new a {
         color: rgb(var(--txt-color));
         display: block;
@@ -99,6 +100,14 @@ function filterButtons(option:filterOptionStru["value"]) {
       &.fade-leave-active {
         position: absolute;
       }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .playgound {
+    .widget-filter {
+      flex-direction: column;
     }
   }
 }
