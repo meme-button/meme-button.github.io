@@ -3,13 +3,14 @@ export const enum sourceType {
   Youtube,
 }
 
-export const enum person {
-  MemeNe,
-  MemeTan,
-}
+export const enum personOptions { MemeNe, MemeTan, MemeBoth }
+export const person = new Map<personOptions, string>([
+  [personOptions.MemeNe, "めめ姉"],
+  [personOptions.MemeTan, "めめタン"],
+  [personOptions.MemeBoth, "めめ姉とめめタン"],
+]);
 
 export const enum jpGroupOption { A, Ka, Sa, Ta, Na, Ha, Ma, Ya, Ra, Wa, Other }
-
 export const jpGroup = new Map<jpGroupOption, string>([
   [jpGroupOption.A, "あ行"],
   [jpGroupOption.Ka, "か行"],
@@ -28,12 +29,13 @@ export interface soundDataInterface {
   id: string | number,
   name: string,
   date?: string,
-  who?: person,
+  who?: personOptions,
   group?: jpGroupOption,
   source: {
     title: string,
     type: sourceType,
     url: string,
+    period?: string,
   },
   isASMR?: boolean,
   volume?: number,
@@ -44,7 +46,7 @@ const sound:soundDataInterface[] = [
     id: 1,
     name: "おはめめ",
     date: "2023-10-8",
-    who: person.MemeTan,
+    who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
@@ -57,7 +59,7 @@ const sound:soundDataInterface[] = [
     id: 2,
     name: "会いに来てくれてありがとう",
     date: "2023-10-8",
-    who: person.MemeTan,
+    who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
@@ -70,7 +72,7 @@ const sound:soundDataInterface[] = [
     id: 3,
     name: "こんめめ",
     date: "2023-10-2",
-    who: person.MemeTan,
+    who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
       title: "ドーナツ美味しそうでしょ？🍩😋",
@@ -84,7 +86,7 @@ const sound:soundDataInterface[] = [
     id: 4,
     name: "はーーーーしししししししししーー",
     date: "2023-10-11",
-    who: person.MemeNe,
+    who: personOptions.MemeNe,
     group: jpGroupOption.Ha,
     source: {
       title: "【作業雑談┋Just Chatting】来週のスケジュールつくり→スイカゲーム→雀魂(作業)🐏羊娘めめ Vtuber",

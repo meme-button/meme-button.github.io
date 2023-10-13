@@ -3,7 +3,11 @@
     <header>
       <div class="widget widget-filter">
         <span class="widget-label">フィルター</span>
-        <Filter :filter-options="filterOptions" @filter-clicked="filterButtons" />
+        <Filter
+          :filter-options="filterOptions"
+          disable-empty-choice
+          @filter-clicked="filterButtons"
+        />
       </div>
     </header>
     <ul class="button-list">
@@ -81,6 +85,7 @@ function filterButtons(option:filterOptionStru["value"]) {
     flex-flow: row wrap;
     align-items: center;
     gap: 0.75rem;
+    min-height: 2.625rem;
     padding: 0;
     margin: 0;
     li {
