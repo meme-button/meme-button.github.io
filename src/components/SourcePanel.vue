@@ -11,7 +11,7 @@
         <p class="source-url"><a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
         <ul class="source-info">
           <li v-if="period" class="source-period">{{ period }}</li>
-          <li v-if="who" class="source-who">{{ person.get(who) }}</li>
+          <RollingText v-if="sourceContent" class="source-content" tag="li" :text="sourceContent" />
         </ul>
       </div>
     </Transition>
@@ -26,6 +26,7 @@ import { sourceType, person } from "@/data/sound";
 import type { soundDataInterface } from "@/data/sound";
 
 const id = ref<soundDataInterface["id"]>();
+const name = ref<soundDataInterface["name"]>();
 const type = ref<soundDataInterface["source"]["type"]>();
 const title = ref<soundDataInterface["source"]["title"]>("これはめめの大好きなプリンです");
 const url = ref<soundDataInterface["source"]["url"]>("https://memehitsuji.com/");
@@ -52,6 +53,7 @@ const playSoundBus = useEventBus<soundDataInterface>("playSound");
 playSoundBus.on(async sound => {
   console.log("🚀 ~ file: SourcePanel.vue:42 ~ sound:", sound);
   id.value = sound.id;
+  name.value = sound.name;
   type.value = sound.source.type;
   title.value = sound.source.title;
   url.value = sound.source.url;
@@ -60,6 +62,7 @@ playSoundBus.on(async sound => {
   await nextTick();
   isExpanded.value = true;
 });
+const sourceContent = computed(() => id.value ? `[${person.get(who.value!)}] ${name.value}` : undefined);
 //  #endregion
 
 // #region : Handle expand and pass the height
@@ -138,14 +141,19 @@ defineExpose({
       font-weight: 500;
     }
   }
+  .source-url {
+    display: inline-block;
+  }
   .source-info {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 0.5rem;
     li + li {
-      margin-top: 0.375rem;
+      margin-top: .5rem;
     }
-    &:not(:empty) {
+    .source-content {
+      height: 1.25rem;
       margin-top: 0.5rem;
     }
   }
