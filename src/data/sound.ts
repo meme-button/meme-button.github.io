@@ -100,7 +100,7 @@ const sound:soundDataInterface[] = [
   },
   {
     id: 5,
-    name: "え 食べないの？美味しいのに..",
+    name: "え？食べないの？美味しいのに..",
     date: "2023-10-15",
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
