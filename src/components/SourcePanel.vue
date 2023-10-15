@@ -106,6 +106,9 @@ defineExpose({
   &.expanded {
     transform: translateY(-100%);
   }
+  ::selection {
+    background: #f3c591;
+  }
 }
 
 .source-icon {
