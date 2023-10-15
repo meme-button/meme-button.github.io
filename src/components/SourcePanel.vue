@@ -11,7 +11,7 @@
         <p class="source-url"><a :href="url" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
         <ul class="source-info">
           <li v-if="period" class="source-period">{{ period }}</li>
-          <RollingText v-if="sourceContent" class="source-content" tag="li" :text="sourceContent" />
+          <RollingText v-if="sourceContent" class="source-content" tag="li" :text="sourceContent" :rolling-time="8" />
         </ul>
       </div>
     </Transition>

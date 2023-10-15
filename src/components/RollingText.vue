@@ -1,5 +1,11 @@
 <template>
-  <component :is="tag" ref="roller" :class="['rolling-text', { 'rolling': isOverflow }]">
+  <component
+    :is="tag"
+    ref="roller"
+    class="rolling-text"
+    :class="{ 'rolling': isOverflow }"
+    :style="{ '--rolling-time': rollingTime ? rollingTime + 's' : undefined }"
+  >
     <span>{{ text }}</span>
   </component>
 </template>
@@ -11,6 +17,7 @@ import { useWindowSize } from "@vueuse/core";
 interface Props {
   tag?: string,
   text: string,
+  rollingTime?: number,
 }
 const props = withDefaults(defineProps<Props>(), {
   tag: "p",
@@ -28,6 +35,7 @@ watch(screenWidth, () => isOverflow.value = roller.value!.scrollWidth > roller.v
 
 <style lang="scss" scoped>
 .rolling-text {
+  --rolling-time: 15s;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -41,7 +49,7 @@ watch(screenWidth, () => isOverflow.value = roller.value!.scrollWidth > roller.v
     line-height: normal;
     > span {
       display: inline-block;
-      animation: rolling linear infinite 15s;
+      animation: rolling linear infinite var(--rolling-time);
     }
   }
 }
