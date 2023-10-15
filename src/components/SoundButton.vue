@@ -85,9 +85,9 @@ randomPlayBus.on(id => {
     }
   }
   &:active {
-    padding-top: 0.375rem;
     button {
       padding: 0;
+      padding-top: 0.375rem;
       span {
         background: var(--btn-bg-pressed);
         box-shadow: none;
