@@ -12,7 +12,15 @@
     </header>
     <ul class="button-list">
       <li class="submit-new">
-        <a href="https://forms.gle/JPrUUCSCKLCZibZZ9" target="_blank" rel="noreferrer noopener" title="新しいボタンの意見"><Icon icon="uiw:plus" /></a>
+        <a
+          href="https://forms.gle/JPrUUCSCKLCZibZZ9"
+          target="_blank"
+          rel="noreferrer noopener"
+          title="新規ボタンの意見"
+          aria-label="新規ボタンの意見"
+        >
+          <Icon icon="uiw:plus" />
+        </a>
       </li>
       <TransitionGroup name="fade">
         <li v-for="sound in soundDataFiltered" :key="sound.id">

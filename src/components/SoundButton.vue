@@ -46,13 +46,12 @@ randomPlayBus.on(id => {
 <style lang="scss" scoped>
 .sound-btn {
   position: relative;
-  padding-bottom: 0.375rem;
   button {
     display: inline-flex;
     flex-flow: row nowrap;
     width: 100%;
     white-space: nowrap;
-    padding: 0;
+    padding: 0 0 0.375rem;
     span {
       --btn-bg: rgb(var(--color-theme2));
       --btn-bg-pressed: rgb(var(--color-theme2-dark));
@@ -86,11 +85,13 @@ randomPlayBus.on(id => {
     }
   }
   &:active {
-    padding-top: 0.375rem;
-    padding-bottom: 0;
-    button span {
-      background: var(--btn-bg-pressed);
-      box-shadow: none;
+    button {
+      padding: 0;
+      padding-top: 0.375rem;
+      span {
+        background: var(--btn-bg-pressed);
+        box-shadow: none;
+      }
     }
   }
   &.just-played {
