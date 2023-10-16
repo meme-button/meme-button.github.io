@@ -2,9 +2,18 @@
   <header>
     <h1 class="sr-only">めめボタン</h1>
     <div class="site-logo">
-      <button type="button" title="ランダム再生" aria-label="ランダム再生" @click="randomPlay()">
+      <button
+        type="button"
+        :class="{ 'active': isLogoPressed }"
+        title="ランダム再生する"
+        aria-label="押したらランダム再生する"
+        @click="randomPlay()"
+        @keydown.space="isLogoPressed = true"
+        @keyup.space="isLogoPressed = false"
+        @blur="isLogoPressed = false"
+      >
         <img class="logo-normal" src="/img/meme-button-logo.svg" alt="めめボタンのロゴ">
-        <img class="logo-pressed" src="/img/meme-button-logo-hover.svg" alt="めめボタンのロゴ（押した）">
+        <img class="logo-pressed" src="/img/meme-button-logo-hover.svg" alt="めめボタンのロゴ（押しました）">
       </button>
     </div>
   </header>
@@ -24,6 +33,7 @@ import SourcePanel from "./components/SourcePanel.vue";
 import soundData from "@/data/sound";
 import type { soundDataInterface } from "@/data/sound";
 
+const isLogoPressed = ref(false);
 const randomPlayBus = useEventBus<soundDataInterface["id"]>("randomPlay");
 
 async function randomPlay() {
@@ -57,7 +67,7 @@ header {
       display: none;
     }
   }
-  &:active {
+  button:is(:active, .active) {
     .logo-normal {
       display: none;
     }
