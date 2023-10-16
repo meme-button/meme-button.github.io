@@ -1,6 +1,14 @@
 <template>
   <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'just-played': justPlayed, 'asmr': sound.isASMR }">
-    <button type="button" :aria-label="sound.name" @click="playSound()">
+    <button
+      type="button"
+      :class="{ 'active': isActive }"
+      :aria-label="sound.name"
+      @click="playSound()"
+      @keydown.space="isActive = true"
+      @keyup.space="isActive = false"
+      @blur="isActive = false"
+    >
       <span class="sound-name">{{ sound.name }}</span>
       <span v-if="sound.isASMR" class="label-asmr">ASMR</span>
     </button>
@@ -16,6 +24,7 @@ const props = defineProps<{
 }>();
 
 const isNewBtn = computed(() => props.sound.date ? (new Date(props.sound.date)) >= props.twoWeeksAgoDate : false);
+const isActive = ref(false);
 const justPlayed = ref(false);
 
 const { play, stop } = useSound(new URL(`/src/assets/sound/${props.sound.id}.mp3`, import.meta.url).href, { volume: props.sound.volume });
@@ -76,16 +85,7 @@ randomPlayBus.on(id => {
       border-bottom-left-radius: 0;
       padding-left: 0.5rem;
     }
-  }
-  &.asmr {
-    .sound-name {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      padding-right: 0.5rem;
-    }
-  }
-  &:active {
-    button {
+    &:is(:active, .active) {
       padding: 0;
       padding-top: 0.375rem;
       span {
@@ -94,6 +94,17 @@ randomPlayBus.on(id => {
       }
     }
   }
+  &.asmr {
+    .sound-name {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-right: 0.5rem;
+    }
+  }
+  // &:active {
+  //   button {
+  //   }
+  // }
   &.just-played {
     button {
       .sound-name {
