@@ -84,7 +84,7 @@ function filterButtons(option:filterOptionStru["value"]) {
   .widget-filter {
     display: flex;
     flex-flow: row nowrap;
-    gap: 1rem;
+    gap: .5rem 1rem;
     .widget-label {
       flex: 0 0 auto;
       padding: .5rem 0;
