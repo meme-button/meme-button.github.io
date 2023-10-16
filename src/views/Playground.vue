@@ -55,8 +55,12 @@ const filterOptions = computed(():filterOptionStru<jpGroupOption|"All">[] => {
 });
 //  #endregion
 
+// #region : Sort buttons
+const btnSorted = computed(() => import.meta.env.MODE === "production" ? soundData.sort((a, b) => (a.yomikata || a.name).localeCompare((b.yomikata || b.name), "ja")) : soundData);
+//  #endregion
+
 // #region : Filtering buttons
-const soundDataFiltered = computed(() => currentFilter.value === "All" ? soundData : soundData.filter(sound => sound.group === currentFilter.value));
+const soundDataFiltered = computed(() => currentFilter.value === "All" ? btnSorted.value : btnSorted.value.filter(sound => sound.group === currentFilter.value));
 const currentFilter = ref<jpGroupOption|"All">("All");
 function filterButtons(option:filterOptionStru["value"]) {
   currentFilter.value = option as jpGroupOption|"All";
@@ -80,7 +84,7 @@ function filterButtons(option:filterOptionStru["value"]) {
   .widget-filter {
     display: flex;
     flex-flow: row nowrap;
-    gap: 1rem;
+    gap: .5rem 1rem;
     .widget-label {
       flex: 0 0 auto;
       padding: .5rem 0;
