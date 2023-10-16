@@ -56,7 +56,7 @@ const filterOptions = computed(():filterOptionStru<jpGroupOption|"All">[] => {
 //  #endregion
 
 // #region : Sort buttons
-const btnSorted = computed(() => soundData.sort((a, b) => a.name.localeCompare(b.name, "ja")));
+const btnSorted = computed(() => import.meta.env.MODE === "production" ? soundData.sort((a, b) => (a.yomikata || a.name).localeCompare((b.yomikata || b.name), "ja")) : soundData);
 //  #endregion
 
 // #region : Filtering buttons
