@@ -55,8 +55,12 @@ const filterOptions = computed(():filterOptionStru<jpGroupOption|"All">[] => {
 });
 //  #endregion
 
+// #region : Sort buttons
+const btnSorted = computed(() => soundData.sort((a, b) => a.name.localeCompare(b.name, "ja")));
+//  #endregion
+
 // #region : Filtering buttons
-const soundDataFiltered = computed(() => currentFilter.value === "All" ? soundData : soundData.filter(sound => sound.group === currentFilter.value));
+const soundDataFiltered = computed(() => currentFilter.value === "All" ? btnSorted.value : btnSorted.value.filter(sound => sound.group === currentFilter.value));
 const currentFilter = ref<jpGroupOption|"All">("All");
 function filterButtons(option:filterOptionStru["value"]) {
   currentFilter.value = option as jpGroupOption|"All";

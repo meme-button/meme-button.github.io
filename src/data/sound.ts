@@ -30,7 +30,7 @@ export interface soundDataInterface {
   name: string,
   date?: string,
   who?: personOptions,
-  group?: jpGroupOption,
+  group: jpGroupOption,
   source: {
     title: string,
     type: sourceType,
@@ -114,7 +114,7 @@ const sound:soundDataInterface[] = [
   },
   {
     id: 6,
-    name: "ほら見て！🍩持ってきてるんだよ！",
+    name: "ほら見て！🍩 持ってきてるんだよ！",
     date: "2023-10-15",
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
