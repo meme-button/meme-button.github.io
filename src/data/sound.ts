@@ -159,7 +159,7 @@ const sound:soundDataInterface[] = [
       url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=2m41s",
       period: "2:41.8 - 2:46.0"
     },
-    volume: 0.3,
+    volume: 0.4,
   },
   {
     id: 9,
@@ -174,7 +174,7 @@ const sound:soundDataInterface[] = [
       url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=5m26s",
       period: "5:26.3 - 5:29.4"
     },
-    volume: 0.5,
+    volume: 0.4,
   },
   {
     id: 10,
@@ -219,7 +219,7 @@ const sound:soundDataInterface[] = [
       url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=7m17s",
       period: "7:17.3 - 7:19.7"
     },
-    volume: 0.3,
+    volume: 0.4,
   },
   {
     id: 13,
@@ -248,7 +248,7 @@ const sound:soundDataInterface[] = [
       url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=27m29s",
       period: "27:29.5 - 27:35.5"
     },
-    volume: 0.3,
+    volume: 0.4,
   },
   {
     id: 15,
@@ -263,7 +263,7 @@ const sound:soundDataInterface[] = [
       url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=28m",
       period: "28:0.5 - 28:06.0"
     },
-    volume: 0.3,
+    volume: 0.4,
   },
   {
     id: 16,
@@ -278,7 +278,7 @@ const sound:soundDataInterface[] = [
       url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=28m25s",
       period: "28:25.4 - 28:28.5"
     },
-    volume: 0.3,
+    volume: 0.5,
   },
   {
     id: 17,
@@ -309,6 +309,306 @@ const sound:soundDataInterface[] = [
       period: "30:46.5 - 30:48.0"
     },
     volume: 0.2,
+  },
+  {
+    id: 19,
+    name: "ナイスー",
+    yomikata: "ナイスー",
+    date: "2023-10-18",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Na,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m12s",
+      period: "40:12.9 - 40:14.3"
+    },
+    volume: 0.35,
+  },
+  {
+    id: 20,
+    name: "あ！！！",
+    yomikata: "あ",
+    date: "2023-10-18",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m25s",
+      period: "40:25.5 - 40:26.4"
+    },
+    volume: 0.2,
+  },
+  {
+    id: 21,
+    name: "ダメだった〜",
+    yomikata: "ダメだった",
+    date: "2023-10-18",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ta,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m28s",
+      period: "40:28.0 - 40:29.8"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 22,
+    name: "へへへ〜",
+    yomikata: "へへへ",
+    date: "2023-10-18",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m35s",
+      period: "40:35.4 - 40:36.5"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 23,
+    name: "こんめめ〜",
+    yomikata: "へへへ",
+    date: "2023-10-18",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m37s",
+      period: "40:37.6 - 40:39.6"
+    },
+    volume: 0.45,
+  },
+  {
+    id: 24,
+    name: "行くぞー",
+    yomikata: "いくぞー",
+    date: "2023-10-18",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=51m39s",
+      period: "51:39.7 - 51:41.5"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 25,
+    name: "来るんな！来るんな！",
+    yomikata: "くるんな！くるんな！",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ka,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=52m26s",
+      period: "52:26.8 - 52:28.5"
+    },
+    volume: 0.3,
+  },
+  {
+    id: 26,
+    name: "うーん...難しいですね",
+    yomikata: "うーん...むずかしいですね",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ka,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=54m19s",
+      period: "54:17.6 - 54:19.9"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 27,
+    name: "ふうふ、あぶっ..あっ、死んだ！..はははは😂",
+    yomikata: "ふうふ、あぶっ..あっ、しんだ！..はははは",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h3m27s",
+      period: "1:03:27.8 - 1:03:31.3"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 28,
+    name: "あらららららら〜",
+    yomikata: "あらららららら",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h3m37s",
+      period: "1:03:37.4 - 1:03:39.3"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 29,
+    name: "ナイス〜ワイプアウト〜",
+    yomikata: "ナイスワイプアウト",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Na,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h3m40s",
+      period: "1:03:40.3 - 1:03:43.3"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 30,
+    name: "イェイ！..イェイ！..ウイ！ははははは",
+    yomikata: "イェイ..イェイ..ウイははははは",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h4m39s",
+      period: "1:04:39.5 - 1:04:49.0"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 31,
+    name: "YABAI！YABAI！うわわわわNoNoNoNo..あぁぁ！やぁぁぁ！",
+    yomikata: "やばいやばいうわわわわNoNoNoNo..あぁぁやぁぁぁ",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ya,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h4m39s",
+      period: "1:04:39.5 - 1:04:49.0"
+    },
+    volume: 0.3,
+  },
+  {
+    id: 32,
+    name: "ボ..ボプになっちゃっためめ",
+    yomikata: "ボ..ボプになっちゃっためめ",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h5m46s",
+      period: "1:05:46.0 - 1:05:49.0"
+    },
+    volume: 0.3,
+  },
+  {
+    id: 33,
+    name: "羊娘ボブ",
+    yomikata: "ひつじむすめボブ",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h5m50s",
+      period: "1:05:50.0 - 1:05:52.0"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 34,
+    name: "ふ〜〜〜",
+    yomikata: "ふ",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h34m5s",
+      period: "1:34:05.0 - 1:34:07.0"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 35,
+    name: "よしゃあと10分くらい頑張ろっかな〜",
+    yomikata: "よしゃあとじゅっぷんくらいがんばろっかな",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h47m19s",
+      period: "1:47:19.0 - 1:47:23.5"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 36,
+    name: "見にきてくれてありがとうございます",
+    yomikata: "みにきてくれてありがとうございます",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ma,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h58m59s",
+      period: "1:58:59.7 - 1:59:02.7"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 37,
+    name: "ではではおつめめさまでした、まったね〜",
+    yomikata: "ではではおつめめさまでした、まったね",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.Ta,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h59m52s",
+      period: "1:59:52.8 - 1:59:56.5"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 38,
+    name: "おやめめ〜 バイバイ〜",
+    yomikata: "おやめめ、バイバイ",
+    date: "2023-10-19",
+    who: personOptions.MemeTan,
+    group: jpGroupOption.A,
+    source: {
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      type: sourceType.Youtube,
+      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h59m56s",
+      period: "1:59:56.7 - 2:00:0.0"
+    },
+    volume: 0.5,
   },
 ];
 
