@@ -4,6 +4,7 @@
     <div class="site-logo">
       <button
         type="button"
+        id="randomPlay"
         :class="{ 'active': isLogoPressed }"
         title="ランダム再生する"
         aria-label="押したらランダム再生する"

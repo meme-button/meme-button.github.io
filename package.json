@@ -2,6 +2,12 @@
   "name": "vue3-ts-base",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meme-button/meme-button.github.io"
+  },
+  "license": "MIT",
+  "author": "Oliver Mak <oliver139.working@gmail.com> (https://github.com/oliver139)",
   "scripts": {
     "dev": "vite",
     "postinstall": "npx simple-git-hooks",
@@ -23,25 +29,22 @@
     "@iconify/vue": "^4.1.1",
     "@rushstack/eslint-patch": "^1.5.1",
     "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^20.8.5",
+    "@types/node": "^20.8.7",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/tsconfig": "^0.4.0",
     "eslint": "^8.51.0",
     "eslint-plugin-vue": "^9.17.0",
     "eslint-plugin-vuejs-accessibility": "^2.2.0",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.0.2",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.69.3",
+    "sass": "^1.69.4",
     "simple-git-hooks": "^2.9.0",
     "typescript": "~5.2.2",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.2",
-    "vite": "^4.4.11",
+    "vite": "^4.5.0",
     "vue-tsc": "^1.8.19"
-  },
-  "optionalDependencies": {
-    "vue-gtag": "^2.0.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -55,5 +58,14 @@
     "overrides": {
       "postcss@<8.4.31": ">=8.4.31"
     }
-  }
+  },
+  "engines": {
+    "node": "18.18.1"
+  },
+  "keywords": [
+    "memehitsuji",
+    "hitsujimusumememe",
+    "memehitsujimusume",
+    "羊娘めめ"
+  ]
 }
