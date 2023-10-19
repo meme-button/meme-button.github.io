@@ -71,6 +71,7 @@ randomPlayBus.on(id => {
       padding: 0.5rem .75rem;
       border-radius: 0.375rem;
       box-shadow: 0px .375rem 0px var(--btn-shadow);
+      pointer-events: none;
     }
     .sound-name {
       flex: 0 1 auto;
