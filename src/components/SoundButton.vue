@@ -2,6 +2,7 @@
   <div class="sound-btn" :class="{ 'new-btn': isNewBtn, 'just-played': justPlayed, 'asmr': sound.isASMR }">
     <button
       type="button"
+      :id="`soundbtn-${sound.id}`"
       :class="{ 'active': isActive }"
       :aria-label="sound.name"
       @click="playSound()"
