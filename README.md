@@ -2,7 +2,7 @@
 
 ## Project Setup
 
-PNPM with node 18.17.1 is used.
+PNPM with node 18.18.1 is used.
 
 ```sh
 pnpm install
@@ -25,3 +25,10 @@ pnpm build
 ```sh
 pnpm lint
 ```
+
+### Get all used video links
+
+```sh
+pnpm getlinks
+```
+
