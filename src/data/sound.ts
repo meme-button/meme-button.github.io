@@ -52,7 +52,7 @@ const sound:soundDataInterface[] = [
     source: {
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=-fUS25Ca-yg&t=25m14s",
+      url: "https://youtu.be/-fUS25Ca-yg?t=25m14s",
       period: "25:14.8 - 25:16.8"
     },
     isASMR: true,
@@ -67,7 +67,7 @@ const sound:soundDataInterface[] = [
     source: {
       title: "【朝活┊KU100 ASMR】Hello August🌻8月最初の「おはよう」待ってるよ🐏",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=-fUS25Ca-yg&t=45m34s",
+      url: "https://youtu.be/-fUS25Ca-yg?t=45m34s",
       period: "45:34.4 - 45:37.4"
     },
     isASMR: true,
@@ -141,7 +141,7 @@ const sound:soundDataInterface[] = [
     source: {
       title: "【作業雑談┋Just Chatting】来週のスケジュールつくり→スイカゲーム→雀魂(作業)🐏羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=Ul3BmdcFeDg&t=2h29m1s",
+      url: "https://youtu.be/Ul3BmdcFeDg?t=2h29m1s",
       period: "2:29:01.0 - 2:29:07.6"
     },
     volume: 0.3,
@@ -154,9 +154,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=2m41s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=2m41s",
       period: "2:41.8 - 2:46.0"
     },
     volume: 0.4,
@@ -169,9 +169,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=5m26s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=5m26s",
       period: "5:26.3 - 5:29.4"
     },
     volume: 0.4,
@@ -184,9 +184,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=5m29s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=5m29s",
       period: "5:29.4 - 5:30.7"
     },
     volume: 0.8,
@@ -199,9 +199,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=5m58s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=5m58s",
       period: "5:58.5 - 5:59.7"
     },
     volume: 0.9,
@@ -214,9 +214,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ya,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=7m17s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=7m17s",
       period: "7:17.3 - 7:19.7"
     },
     volume: 0.4,
@@ -228,9 +228,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=9m20s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=9m20s",
       period: "9:20.7 - 9:22.7"
     },
     volume: 0.2,
@@ -243,9 +243,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ta,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=27m29s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=27m29s",
       period: "27:29.5 - 27:35.5"
     },
     volume: 0.4,
@@ -258,9 +258,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=28m",
+      url: "https://youtu.be/xfV_Tk5K63s?t=28m",
       period: "28:0.5 - 28:06.0"
     },
     volume: 0.4,
@@ -273,9 +273,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Na,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=28m25s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=28m25s",
       period: "28:25.4 - 28:28.5"
     },
     volume: 0.5,
@@ -288,9 +288,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Na,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=30m34s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=30m34s",
       period: "30:34.5 - 30:36.8"
     },
     volume: 0.2,
@@ -303,9 +303,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ya,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=30m46s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=30m46s",
       period: "30:46.5 - 30:48.0"
     },
     volume: 0.2,
@@ -318,9 +318,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Na,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m12s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=40m12s",
       period: "40:12.9 - 40:14.3"
     },
     volume: 0.35,
@@ -333,9 +333,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m25s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=40m25s",
       period: "40:25.5 - 40:26.4"
     },
     volume: 0.2,
@@ -348,9 +348,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ta,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m28s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=40m28s",
       period: "40:28.0 - 40:29.8"
     },
     volume: 0.4,
@@ -363,9 +363,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m35s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=40m35s",
       period: "40:35.4 - 40:36.5"
     },
     volume: 0.4,
@@ -378,9 +378,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=40m37s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=40m37s",
       period: "40:37.6 - 40:39.6"
     },
     volume: 0.45,
@@ -393,9 +393,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=51m39s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=51m39s",
       period: "51:39.7 - 51:41.5"
     },
     volume: 0.4,
@@ -408,9 +408,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=52m26s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=52m26s",
       period: "52:26.8 - 52:28.5"
     },
     volume: 0.3,
@@ -423,9 +423,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ka,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=54m19s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=54m19s",
       period: "54:17.6 - 54:19.9"
     },
     volume: 0.5,
@@ -438,9 +438,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h3m27s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h3m27s",
       period: "1:03:27.8 - 1:03:31.3"
     },
     volume: 0.4,
@@ -453,9 +453,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h3m37s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h3m37s",
       period: "1:03:37.4 - 1:03:39.3"
     },
     volume: 0.4,
@@ -468,9 +468,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Na,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h3m40s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h3m40s",
       period: "1:03:40.3 - 1:03:43.3"
     },
     volume: 0.4,
@@ -483,9 +483,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h4m39s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h4m39s",
       period: "1:04:39.5 - 1:04:49.0"
     },
     volume: 0.4,
@@ -498,9 +498,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ya,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h4m39s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h4m39s",
       period: "1:04:39.5 - 1:04:49.0"
     },
     volume: 0.3,
@@ -513,9 +513,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h5m46s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h5m46s",
       period: "1:05:46.0 - 1:05:49.0"
     },
     volume: 0.3,
@@ -528,9 +528,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h5m50s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h5m50s",
       period: "1:05:50.0 - 1:05:52.0"
     },
     volume: 0.4,
@@ -543,9 +543,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h34m5s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h34m5s",
       period: "1:34:05.0 - 1:34:07.0"
     },
     volume: 0.4,
@@ -558,9 +558,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ha,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h47m19s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h47m19s",
       period: "1:47:19.0 - 1:47:23.5"
     },
     volume: 0.4,
@@ -573,9 +573,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ma,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h58m59s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h58m59s",
       period: "1:58:59.7 - 1:59:02.7"
     },
     volume: 0.5,
@@ -588,9 +588,9 @@ const sound:soundDataInterface[] = [
     who: personOptions.MemeTan,
     group: jpGroupOption.Ta,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h59m52s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h59m52s",
       period: "1:59:52.8 - 1:59:56.5"
     },
     volume: 0.5,
@@ -598,15 +598,195 @@ const sound:soundDataInterface[] = [
   {
     id: 38,
     name: "おやめめ〜 バイバイ〜",
-    yomikata: "おやめめ、バイバイ",
+    yomikata: "おやめめ〜 バイバイ",
     date: "2023-10-19",
     who: personOptions.MemeTan,
     group: jpGroupOption.A,
     source: {
-      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber ",
+      title: "スプラ3 ᔦꙬᔨ イベントマッチ「改造ガチホコをかわいがるテスト」で遊ぶひつじ 🐏 羊娘めめ Vtuber",
       type: sourceType.Youtube,
-      url: "https://www.youtube.com/watch?v=xfV_Tk5K63s&t=1h59m56s",
+      url: "https://youtu.be/xfV_Tk5K63s?t=1h59m56s",
       period: "1:59:56.7 - 2:00:0.0"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 39,
+    name: "わ〜可愛い！",
+    yomikata: "わ〜かわいい",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Wa,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=14m23s",
+      period: "14:23.4 - 14:24.5"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 40,
+    name: "クール！クールイケメンで頑張ろう皆！",
+    yomikata: "クールクールイケメンでがんばろうみんな",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Ka,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=24m22s",
+      period: "24:22.5 - 24:26.0"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 41,
+    name: "ワオワオワオ",
+    yomikata: "ワオワオワオ",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Wa,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=27m43s",
+      period: "27:43.9 - 27:45.3"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 42,
+    name: "なんで〜",
+    yomikata: "なんで",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Na,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=29m19s",
+      period: "29:19.9 - 29:21.7"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 43,
+    name: "なんで↗",
+    yomikata: "なんで",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Na,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=30m13s",
+      period: "30:13.7 - 30:14.8"
+    },
+    volume: 0.4,
+  },
+  {
+    id: 44,
+    name: "こんばんは",
+    yomikata: "こんばんは",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Ka,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=30m44s",
+      period: "30:44.0 - 30:45.5"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 45,
+    name: "パチ",
+    yomikata: "パチ",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=30m51s",
+      period: "30:51.0 - 30:51.5"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 46,
+    name: "なになに",
+    yomikata: "なになに",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Na,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=47m58s",
+      period: "47:58.0 - 47:59.0"
+    },
+    volume: 0.7,
+  },
+  {
+    id: 47,
+    name: "こんめめ↗",
+    yomikata: "こんめめ↗",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Ka,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=47m59s",
+      period: "47:59.8 - 48:01.0"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 48,
+    name: "働け働け！...へへへ〜",
+    yomikata: "はたらけはたらけ...へへへ",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Ha,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=50m23s",
+      period: "50:23.8 - 50:27.4"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 49,
+    name: "くれてた〜",
+    yomikata: "くれてた",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Ka,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=56m8s",
+      period: "56:08.8 - 56:09.8"
+    },
+    volume: 0.5,
+  },
+  {
+    id: 50,
+    name: "じゅわー",
+    yomikata: "じゅわー",
+    date: "2023-10-20",
+    who: personOptions.MemeNe,
+    group: jpGroupOption.Sa,
+    source: {
+      title: "【作業雑談┋Just Chatting】お歌テスト→来週のスケジュールつくり→ヘレの海底都市計画→ホロキュア🐏羊娘めめ Vtuber",
+      type: sourceType.Youtube,
+      url: "https://youtu.be/RSLt14NcdNo?t=59m25s",
+      period: "59:25.4 - 59:26.2"
     },
     volume: 0.5,
   },
