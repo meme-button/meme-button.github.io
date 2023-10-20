@@ -139,19 +139,23 @@ defineExpose({
     font-weight: 500;
     text-wrap: balance;
     height: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.375rem;
     :deep(span) {
       font-weight: 500;
     }
   }
   .source-url {
     display: inline-block;
+    a {
+
+      line-height: normal;
+    }
   }
   .source-info {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: 0.375rem;
     li + li {
       margin-top: .5rem;
     }
