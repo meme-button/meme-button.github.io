@@ -15,7 +15,9 @@ sound.forEach(item => {
       break;
 
     case sourceType.Youtube:
-      links.youtube.add(url.origin + url.pathname + "?v=" + url.searchParams.get("v"));
+      links.youtube.add(url.searchParams.get("v")
+        ? url.origin + url.pathname + "?v=" + url.searchParams.get("v")
+        : "https://www.youtube.com/watch?v=" + url.pathname.slice(1));
       break;
   }
 });
