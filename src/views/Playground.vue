@@ -22,7 +22,7 @@
           <Icon icon="uiw:plus" />
         </a>
       </li>
-      <TransitionGroup name="fade">
+      <TransitionGroup :name="isMobileView ? '' : 'fade'">
         <li v-for="sound in soundDataFiltered" :key="sound.id">
           <SoundButton
             :sound="sound"
@@ -40,6 +40,8 @@ import type { filterOptionStru } from "@/components/Filter.vue";
 
 const twoWeeksAgoDate = new Date();
 twoWeeksAgoDate.setDate(twoWeeksAgoDate.getDate() - 14);
+
+const isMobileView = useMediaQuery("(max-width: 576px)");
 
 // #region : Filter options
 const filterOptions = computed(():filterOptionStru<jpGroupOption|"All">[] => {
